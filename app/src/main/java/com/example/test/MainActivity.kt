@@ -56,14 +56,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun pickFromGallery() {
-        val galleryIntent = Intent()
-        galleryIntent.action = Intent.ACTION_GET_CONTENT
-        galleryIntent.type = "image/*"
-        startActivityForResult(galleryIntent,IMAGE_PICK_GALLERY_REQUEST )
-
-    }
-
     /**
     * Checking storage permissions
      */
